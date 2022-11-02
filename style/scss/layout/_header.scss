@@ -1,0 +1,160 @@
+.header {
+    background-color: #014E56;
+    padding: 60px 0px
+}
+
+.header__inner {
+    @include row;
+}
+
+.header__nav {
+    width: 100%;
+    margin-left: 44px;
+    
+}
+
+.header__list {
+    @include row;
+}
+
+.header__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.header__item--number {
+    margin-left: auto;
+}
+
+.header__item--number .header__link {
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 10px 32px;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.header__btn {
+    display: none;
+    background: none;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.line {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    display: inline-block;
+    background: #fff;
+}
+
+.line:nth-child(2) {
+    margin: 4px 0px;
+}
+
+@media only screen and (max-width:730px) {
+
+.container {
+    width: 100%;
+    padding: 0px 24px;
+}
+    
+    .header__btn {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        z-index: 2;
+    }
+
+    .active .header__btn {
+        position: relative;
+    }
+
+    .line {
+        transition: all 0.4s ease;
+    }
+
+    .active .line {
+        position: absolute;
+    }
+
+    .active .line--medium {
+        display: none;
+    }
+    .active .line--top {
+        transform: rotate(45deg);
+    }
+    .active .line--bottom {
+        transform: rotate(-45deg);
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__inner {
+        width: 100%;
+        margin:0 auto;
+    }
+
+    .logo-img {
+        margin-left: auto;
+    }
+
+    .header {
+        position: relative;
+        padding: 48px 0;
+    }
+
+    .header__nav--active {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #2C6269;
+        left: -44px;
+        width: 70%;
+        height: 100vh;
+        top: 135px;
+        z-index: 2;
+    }
+
+    .header__nav--active .header__list {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        padding-top: 64px;
+    }
+
+    
+    .header__nav--active .header__item {
+        margin-top: 40px;
+    }
+
+    .header__nav--active .header__item--number {
+        margin: 0;
+        padding-top: 100%;
+    }
+
+    .overlay--active {
+        position: absolute;
+        background-color: yellow;
+        display: block;
+        height: 100vh;
+        z-index: 1;
+        top: 271px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}

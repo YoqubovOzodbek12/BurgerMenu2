@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+@media only screen and (max-width:1150px) {
+    .container {
+        width: 100%;
+        max-width: 730px;
+    }
+}
+
+
+// @media only screen and (max-width:730px) {
+//     .container {
+//         width: 100%;
+//         max-width: 327px;
+//     }
+// }
