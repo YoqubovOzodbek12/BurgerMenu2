@@ -73,7 +73,7 @@
         display: flex;
         flex-direction: column;
         margin-right: auto;
-        z-index: 3;
+        z-index: 2;
     }
 
     .active .header__btn {
@@ -125,7 +125,7 @@
         width: 70%;
         height: 100vh;
         top: 135px;
-        z-index: 3;
+        z-index: 2;
     }
 
     .header__nav--active .header__list {
@@ -145,16 +145,16 @@
         padding-top: 100%;
     }
 
-    .overlay--active {
+    .overflyo--active {
         position: absolute;
-        background-color: rgba(169, 169, 137, 0.339);
+        background-color: rgba(121, 121, 60, 0.339);
         display: inline-block;
         height: 100vh;
         z-index: 1;
         top: 272px;
         bottom: 0;
         right: 0;
-        left: 0;
+        left: 350px;
         margin: auto;
     }
 }
