@@ -167,6 +167,7 @@ p {
     display: flex;
     flex-direction: column;
     margin-right: auto;
+    padding-top: 64px;
   }
   .header__nav--active .header__item {
     margin-top: 40px;
@@ -177,12 +178,14 @@ p {
   }
   .overlay--active {
     position: absolute;
-    background-color: rgba(64, 64, 59, 0.339);
+    background-color: rgba(169, 169, 137, 0.339);
     display: inline-block;
     height: 100vh;
+    z-index: 1;
+    top: 272px;
+    bottom: 0;
     right: 0;
     left: 0;
-    bottom: 0;
     margin: auto;
   }
 }/*# sourceMappingURL=main.css.map */
