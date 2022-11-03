@@ -180,11 +180,9 @@ p {
     background-color: rgba(64, 64, 59, 0.339);
     display: inline-block;
     height: 100vh;
-    z-index: 1;
-    top: 272px;
-    bottom: 0;
     right: 0;
     left: 0;
+    bottom: 0;
     margin: auto;
   }
 }/*# sourceMappingURL=main.css.map */
