@@ -167,7 +167,6 @@ p {
     display: flex;
     flex-direction: column;
     margin-right: auto;
-    padding-top: 64px;
   }
   .header__nav--active .header__item {
     margin-top: 40px;
